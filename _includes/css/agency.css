@@ -903,7 +903,7 @@ body {
 body {
   background: #fff;
   font-family: "Montserrat", sans-serif;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 h1,
