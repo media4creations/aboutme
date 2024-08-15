@@ -56,7 +56,13 @@ h6 {
     font-family: {{ site.data.template.font.primary }};
     font-weight: 700;
 }
-
+h1 {
+    font-size:6em;
+}
+.content h1 span {
+    display: block;
+    line-height: 0.4em;
+}
 .img-centered {
     margin: 0 auto;
 }
