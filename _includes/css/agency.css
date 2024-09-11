@@ -1192,8 +1192,8 @@ svg rect {
 
 .bar-graph-horizontal > div {
   /*float: left;*/
-  margin-bottom: 0px;
-  width: 100%;
+  width: 64%;
+  margin: 0 auto;
 }
 
 .bar-graph-horizontal .year {
