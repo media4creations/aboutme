@@ -1227,7 +1227,7 @@ svg rect {
 }
 
 .bar-graph-one .bar-one .bar {
-  background-color: #d99f52;
+  background-color: #d7a04a;
   -webkit-animation: show-bar-one 1.2s 0.1s forwards;
   -moz-animation: show-bar-one 1.2s 0.1s forwards;
   animation: show-bar-one 1.2s 0.1s forwards;
