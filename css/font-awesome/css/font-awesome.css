@@ -307,6 +307,9 @@
 .fa-tag:before {
   content: "\f02b";
 }
+.fa-users-viewfinder:before {
+  content: "\e595";
+}
 .fa-tags:before {
   content: "\f02c";
 }
