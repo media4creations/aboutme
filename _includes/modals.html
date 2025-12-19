@@ -12,7 +12,35 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <div class="carousel">
+                            <div id="carousel{{ post.modal-id }}" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    {% for image in post.images %}
+                                    <li data-target="#carousel{{ post.modal-id }}"
+                                        data-slide-to="{{ forloop.index0 }}"
+                                        class="{% if forloop.first %}active{% endif %}">
+                                    </li>
+                                    {% endfor %}
+                                </ol>
+                                <!-- Slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    {% for image in post.images %}
+                                    <div class="item {% if forloop.first %}active{% endif %}">
+                                        <img src="img/portfolio/{{ image }}"
+                                             class="img-responsive img-centered"
+                                             alt="{{ post.alt }}">
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                            <!--<div class="carousel">
                                 <h2>{{ post.title }}</h2>
                                 <hr class="star-primary">
                                 <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
@@ -32,7 +60,7 @@
                                     </li>
                                 </ul>
                                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </div>
