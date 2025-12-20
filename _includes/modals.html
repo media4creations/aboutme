@@ -14,38 +14,47 @@
                         <div class="modal-body">
                             <div id="carousel{{ post.modal-id }}" class="carousel slide">
 
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    {% for image in post.images %}
-                                    <li data-target="#carousel{{ post.modal-id }}"
-                                        data-slide-to="{{ forloop.index0 }}"
-                                        class="{% if forloop.first %}active{% endif %}">
-                                    </li>
-                                    {% endfor %}
-                                </ol>
-                            
-                                <!-- Slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    {% for image in post.images %}
-                                    <div class="item {% if forloop.first %}active{% endif %}">
-                                        <img src="img/work/{{ image.file }}"
-                                             class="img-responsive img-centered"
-                                             alt="{{ image.caption }}">
-                                    </div>
-                                    <div class="carousel-caption">
-                                        {{ image.caption }}
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
+                                 <!-- Indicators -->
+                                 <div class="carousel-indicators">
+                                     {% for image in post.images %}
+                                     <button
+                                         type="button"
+                                         data-bs-target="#carousel{{ post.modal-id }}"
+                                         data-bs-slide-to="{{ forloop.index0 }}"
+                                         class="{% if forloop.first %}active{% endif %}"
+                                         aria-current="{% if forloop.first %}true{% endif %}">
+                                     </button>
+                                     {% endfor %}
+                                 </div>
+                             
+                                 <!-- Slides -->
+                                 <div class="carousel-inner">
+                                     {% for image in post.images %}
+                                     <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                         <img src="img/work/{{ image.file }}"
+                                              class="d-block w-100"
+                                              alt="{{ image.caption }}">
+                                         <div class="carousel-caption d-none d-md-block">
+                                             {{ image.caption }}
+                                         </div>
+                                     </div>
+                                     {% endfor %}
+                                 </div>
+                             
+                                 <!-- Controls -->
+                                 <button class="carousel-control-prev" type="button"
+                                         data-bs-target="#carousel{{ post.modal-id }}"
+                                         data-bs-slide="prev">
+                                     <span class="carousel-control-prev-icon"></span>
+                                 </button>
+                             
+                                 <button class="carousel-control-next" type="button"
+                                         data-bs-target="#carousel{{ post.modal-id }}"
+                                         data-bs-slide="next">
+                                     <span class="carousel-control-next-icon"></span>
+                                 </button>
+                             
+                             </div>
                         </div>
                     </div>
                 </div>
