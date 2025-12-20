@@ -18,10 +18,16 @@
     {% include js.html %}
     <script  src="{{ "/js/pen.js" | prepend: site.baseurl }}"></script>
     <script>
-    $(document).on('shown.bs.modal', '.portfolio-modal', function () {
-        $(this).find('.carousel').carousel({
-            interval: false
-        });
+    document.querySelectorAll('.portfolio-modal').forEach(modal => {
+      modal.addEventListener('shown.bs.modal', () => {
+        const carouselEl = modal.querySelector('.carousel');
+        if (carouselEl) {
+          new bootstrap.Carousel(carouselEl, {
+            interval: false,
+            ride: false
+          });
+        }
+      });
     });
     </script>
     </body>
