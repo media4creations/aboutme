@@ -13,6 +13,7 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <div id="carousel{{ post.modal-id }}" class="carousel slide" data-ride="carousel">
+
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
                                     {% for image in post.images %}
@@ -22,16 +23,18 @@
                                     </li>
                                     {% endfor %}
                                 </ol>
+                            
                                 <!-- Slides -->
                                 <div class="carousel-inner" role="listbox">
                                     {% for image in post.images %}
                                     <div class="item {% if forloop.first %}active{% endif %}">
                                         <img src="img/work/{{ image.file }}"
                                              class="img-responsive img-centered"
-                                             alt="{{ post.alt }}">
+                                             alt="{{ image.caption }}">
                                     </div>
                                     {% endfor %}
                                 </div>
+                            
                                 <!-- Controls -->
                                 <a class="left carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left"></span>
@@ -39,6 +42,7 @@
                                 <a class="right carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right"></span>
                                 </a>
+                            
                             </div>
                         </div>
                     </div>
