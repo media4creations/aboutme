@@ -30,5 +30,15 @@
       });
     });
     </script>
+      <script>
+      document.querySelectorAll('.portfolio-modal').forEach(modal => {
+        modal.addEventListener('hidden.bs.modal', () => {
+          const carouselEl = modal.querySelector('.carousel');
+          if (carouselEl) {
+            bootstrap.Carousel.getInstance(carouselEl)?.to(0);
+          }
+        });
+      });
+      </script>
     </body>
 </html>
