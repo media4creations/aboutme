@@ -17,5 +17,12 @@
     {% include modals.html %}
     {% include js.html %}
     <script  src="{{ "/js/pen.js" | prepend: site.baseurl }}"></script>
+    <script>
+    $(document).on('shown.bs.modal', '.portfolio-modal', function () {
+        $(this).find('.carousel').carousel({
+            interval: false
+        });
+    });
+    </script>
     </body>
 </html>
