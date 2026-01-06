@@ -1,21 +1,20 @@
- <!-- Portfolio Modals -->
+<!-- Portfolio Modals -->
  {% for post in site.posts %}
-
-                         <!-- Modal Content -->
-                            {% assign project = site.data.projects.projects | where: "id", "project1" | first %}
-
-<div class="modal fade" id="project1Modal" tabindex="-1">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title">{{ project.title }}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-
-        <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+ {% assign project = site.data.projects.projects | where: "id", "project1" | first %}
+    <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                         <!-- Carousel Content -->
+                            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
 
           <!-- Indicators -->
           <div class="carousel-indicators">
@@ -33,7 +32,7 @@
           <div class="carousel-inner">
             {% for img in project.images %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
-              <img src="/aboutme/assets/img/{{ img.file }}" class="d-block w-100">
+              <img src="/assets/img/{{ img.file }}" class="d-block w-100">
               {% if img.caption %}
               <div class="carousel-caption d-none d-md-block">
                 <p>{{ img.caption }}</p>
@@ -55,12 +54,11 @@
           </button>
 
         </div>
-
-      </div>
+                         <!-- EOF Carousel Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-
-                         <!-- EOF Modal Content -->
-
 {% endfor %}
