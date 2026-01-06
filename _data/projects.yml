@@ -1,0 +1,10 @@
+projects:
+  - id: project1
+    title: Acemia Fashion Statement
+    images:
+      - file: acemia-01.jpg
+        caption: Front View
+      - file: acemia-02.jpg
+        caption: Side View
+      - file: acemia-03.jpg
+        caption: Detail Shot
