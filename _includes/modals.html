@@ -13,37 +13,65 @@
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                          <!-- Modal Content -->
-                            <div id="carousel{{ post.modal-id }}" class="carousel slide" data-ride="carousel">
+                            {% assign project = site.data.projects.projects | where: "id", "project1" | first %}
 
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    {% for image in post.images %}
-                                    <li data-target="#carousel{{ post.modal-id }}"
-                                        data-slide-to="{{ forloop.index0 }}"
-                                        class="{% if forloop.first %}active{% endif %}">
-                                    </li>
-                                    {% endfor %}
-                                </ol>
-                            
-                                <!-- Slides -->
-                                <div class="carousel-inner" role="listbox">
-                                    {% for image in post.images %}
-                                    <div class="item {% if forloop.first %}active{% endif %}">
-                                        <img src="img/work/{{ image.file }}"
-                                             class="img-responsive img-centered"
-                                             alt="{{ post.alt }}">
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel{{ post.modal-id }}" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
+<div class="modal fade" id="project1Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">{{ project.title }}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            {% for img in project.images %}
+            <button
+              type="button"
+              data-bs-target="#carouselProject1"
+              data-bs-slide-to="{{ forloop.index0 }}"
+              class="{% if forloop.first %}active{% endif %}">
+            </button>
+            {% endfor %}
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            {% for img in project.images %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="/assets/img/{{ img.file }}" class="d-block w-100">
+              {% if img.caption %}
+              <div class="carousel-caption d-none d-md-block">
+                <p>{{ img.caption }}</p>
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselProject1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselProject1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
                          <!-- EOF Modal Content -->
                         </div>
                     </div>
