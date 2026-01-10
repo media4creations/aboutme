@@ -7,6 +7,8 @@
       <div class="modal-body">
                          <!-- Carousel Content -->
                             {% assign project = site.data.projects.projects | where: "id", post.modal-id | first %}
+
+                            {% if project %}
                             <div id="carousel{{ post.modal-id }}" class="carousel slide" data-bs-ride="carousel">
                                <!-- Indicators -->
                                <div class="carousel-indicators">
@@ -46,6 +48,9 @@
                               </button>
              
                             </div>
+                            {% else %}
+                            <p>No data found for {{ post.modal-id }}</p>
+                            {% endif %}
                          <!-- EOF Carousel Content -->
                     </div>
                 </div>
