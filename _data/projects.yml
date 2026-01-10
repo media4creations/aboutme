@@ -1,5 +1,5 @@
 projects:
-  - id: Modal1
+  - modal-id: Modal1
     title: Acemia Fashion Statement
     images:
       - file: acemia-01.jpg
