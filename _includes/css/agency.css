@@ -1314,3 +1314,16 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
   opacity: 1 !important;
   z-index: 1056;
 }
+
+.interactive {
+  pointer-events: none;
+}
+
+.interactive {
+  z-index: 0;
+}
+
+.modal,
+.modal-backdrop {
+  z-index: 1055;
+}
