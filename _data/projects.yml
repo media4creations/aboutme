@@ -1,6 +1,15 @@
 projects:
   - id: modal1
-    title: Acemia Fashion Statement
+    title: Website Works
+    images:
+      - file: acemia-01.jpg
+        caption: Front View
+      - file: av-01.jpg
+        caption: Side View
+      - file: dynamo-01.jpg
+        caption: Detail Shot
+  - id: modal2
+    title: Logo Designs
     images:
       - file: acemia-01.jpg
         caption: Front View
