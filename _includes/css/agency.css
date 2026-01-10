@@ -1304,3 +1304,8 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
 #services .col-md-4 {
     margin-bottom: 50px;
 }
+
+/* Carousel CSS */
+.modal.fade {
+  opacity: 1 !important;
+}
