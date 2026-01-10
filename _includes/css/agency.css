@@ -1309,3 +1309,8 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
 .modal.fade {
   opacity: 1 !important;
 }
+.modal .btn-close {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  z-index: 1056;
+}
