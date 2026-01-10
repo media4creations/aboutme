@@ -1,26 +1,19 @@
 <!-- Portfolio Modals -->
  {% for post in site.posts %}
-     <div class="portfolio-modal modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
+ <div class="modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal"></button>
+      <div class="modal-body">
                          <!-- Carousel Content -->
-                            {% assign project = site.data.projects.projects | where: "id", "project1" | first %}
-                            <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+                            {% assign project = site.data.projects.projects | where: "id", post.modal-id | first %}
+                            <div id="carousel{{ post.modal-id }}" class="carousel slide" data-bs-ride="carousel">
                                <!-- Indicators -->
                                <div class="carousel-indicators">
                                  {% for img in project.images %}
                                  <button
                                    type="button"
-                                   data-bs-target="#carouselProject1"
+                                   data-bs-target="#carousel{{ post.modal-id }}"
                                    data-bs-slide-to="{{ forloop.index0 }}"
                                    class="{% if forloop.first %}active{% endif %}">
                                  </button>
@@ -41,18 +34,19 @@
                                </div>
                               <!-- Controls -->
                               <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselProject1" data-bs-slide="prev">
+                                data-bs-target="#carousel{{ post.modal-id }}"
+                                data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                               </button>
-                    
+                            
                               <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselProject1" data-bs-slide="next">
+                                data-bs-target="#carousel{{ post.modal-id }}"
+                                data-bs-slide="next">
                                 <span class="carousel-control-next-icon"></span>
                               </button>
              
                             </div>
                          <!-- EOF Carousel Content -->
-                        </div>
                     </div>
                 </div>
             </div>
