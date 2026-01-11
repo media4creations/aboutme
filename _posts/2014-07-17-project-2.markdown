@@ -1,9 +1,9 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Social Media Design
+subtitle: Social Media Design
 layout: default
-modal-id: 2
-date: 2014-07-17
+modal-id: 3
+date: 2026-07-17
 img: escape.png
 thumbnail: escape-thumbnail.png
 alt: image-alt
