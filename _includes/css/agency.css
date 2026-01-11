@@ -1313,6 +1313,7 @@ button.btn-close.ms-auto.m-3 {
     position: absolute;
     right: -48px;
 }
+
 .modal .btn-close {
     pointer-events: none;
     opacity: 1 !important;
