@@ -1327,9 +1327,9 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
   z-index: 1055;
 }
 .modal-backdrop {
-    --bs-backdrop-zindex: 3;
-    --bs-backdrop-bg: #000000c7;
-    --bs-backdrop-opacity: 0.5;
+    --bs-backdrop-zindex: 3!important;
+    --bs-backdrop-bg: #000000c7!important;
+    --bs-backdrop-opacity: 0.5!important;
     position: fixed;
     top: 0;
     left: 0;
