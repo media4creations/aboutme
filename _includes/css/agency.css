@@ -1311,13 +1311,15 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
 }
 button.btn-close.ms-auto.m-3 {
     position: absolute;
-    right: -56px;
+    right: -48px;
 }
 .modal .btn-close {
     pointer-events: none;
     opacity: 1 !important;
     z-index: -15 !important;
     cursor: pointer;
+    background: #676767 var(--bs-btn-close-bg) center / 1em auto no-repeat !important;
+    border-radius: 0 !important;
 }
 
 .interactive {
