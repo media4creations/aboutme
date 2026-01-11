@@ -1335,7 +1335,7 @@ button.btn-close.ms-auto.m-3 {
   z-index: 1055;
 }
 .modal-backdrop {
-    --bs-backdrop-zindex: 3!important;
+    --bs-backdrop-zindex: 1050!important;
     --bs-backdrop-bg: #000000c7!important;
     --bs-backdrop-opacity: 1!important;
     position: fixed;
