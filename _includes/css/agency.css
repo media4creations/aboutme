@@ -1309,10 +1309,15 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
 .modal.fade {
   opacity: 1 !important;
 }
+button.btn-close.ms-auto.m-3 {
+    position: absolute;
+    right: -56px;
+}
 .modal .btn-close {
-  pointer-events: auto !important;
-  opacity: 1 !important;
-  z-index: 1056;
+    pointer-events: none;
+    opacity: 1 !important;
+    z-index: -15 !important;
+    cursor: pointer;
 }
 
 .interactive {
