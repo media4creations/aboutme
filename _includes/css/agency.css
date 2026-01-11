@@ -1349,3 +1349,6 @@ button.btn-close.ms-auto.m-3 {
 .modal-backdrop.fade {
     opacity: 1!important;
 }
+.carousel-caption p {
+    color: #4d4d4d;
+}
