@@ -1352,3 +1352,13 @@ button.btn-close.ms-auto.m-3 {
 .carousel-caption p {
     color: #4d4d4d;
 }
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 0 95px 95px;
+}
+
+.modal-lg, .modal-xl {
+    --bs-modal-width: 873px!important;
+}
