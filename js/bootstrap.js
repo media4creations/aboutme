@@ -896,7 +896,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
       that.$element
         .addClass('in')
-        .attr('aria-hidden', false)
+        //.attr('aria-hidden', false)
 
       that.enforceFocus()
 
@@ -932,7 +932,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
     this.$element
       .removeClass('in')
-      .attr('aria-hidden', true)
+      //.attr('aria-hidden', true)
       .off('click.dismiss.bs.modal')
 
     $.support.transition && this.$element.hasClass('fade') ?
