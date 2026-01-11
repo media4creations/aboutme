@@ -1,5 +1,5 @@
 projects:
-  - id: modal1
+  - id: 1
     title: Website Works
     images:
       - file: acemia-01.jpg
@@ -8,7 +8,7 @@ projects:
         caption: Side View
       - file: dynamo-01.jpg
         caption: Detail Shot
-  - id: modal2
+  - id: 2
     title: Logo Designs
     images:
       - file: acemia-01.jpg
