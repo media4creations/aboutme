@@ -17,3 +17,12 @@ projects:
         caption: Side View
       - file: dynamo-01.jpg
         caption: Detail Shot
+  - id: 3
+    title: Social Media Designs
+    images:
+      - file: acemia-01.jpg
+        caption: Front View
+      - file: av-01.jpg
+        caption: Side View
+      - file: dynamo-01.jpg
+        caption: Detail Shot
