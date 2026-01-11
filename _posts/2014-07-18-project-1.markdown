@@ -2,7 +2,7 @@
 title: Logo Designs
 subtitle: Logo Designs
 layout: default
-modal-id: modal2
+modal-id: 2
 date: 2026-01-10
 img: dreams.png
 thumbnail: dreams-thumbnail.png
