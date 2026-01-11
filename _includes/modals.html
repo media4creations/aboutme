@@ -1,7 +1,7 @@
 {% for post in site.posts %}
 {% assign project = site.data.projects.projects | where: "id", post.modal-id | first %}
 {% if project %}
-<div class="modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" aria-labelledby="portfolioModalLabel{{ post.modal-id }}">
+<div class="modal fade" id="portfolio{{ post.modal-id }}" tabindex="-1" aria-labelledby="portfolioModalLabel{{ post.modal-id }}">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <!-- Close Button -->
