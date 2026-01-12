@@ -27,11 +27,26 @@ projects:
     title: Logo Designs
     images:
       - file: acemia-01.jpg
-        caption: Front View
+        purpose: Created to establish a strong and recognizable brand identity
+        industry: Fashion brand
+        concept: The symbol combines initials to form a unified mark
+        application: Designed to work across digital and print
+        tools: Photoshop, Illustrator
+        role: Concept development and logo design
       - file: av-01.jpg
-        caption: Side View
+        purpose: Designed to reflect trust and professionalism
+        industry: Startup / Small business
+        concept: Typography reflects stability and confidence
+        application: Scales well from social media to signage
+        tools: Photoshop, Illustrator
+        role: Brand identity and visual system creation
       - file: dynamo-01.jpg
-        caption: Detail Shot
+        purpose: Developed to communicate creativity and innovation
+        industry: Creative studio
+        concept: The icon represents growth and movement
+        application: Effective in both color and black-and-white
+        tools: Photoshop, Illustrator
+        role: Logo design and brand direction
 
   - id: modal3
     type: video
