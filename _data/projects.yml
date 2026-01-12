@@ -4,11 +4,23 @@ projects:
     title: Website Designs
     images:
       - file: acemia-01.jpg
-        caption: Front View
+        purpose: Brand Presence, Created to establish a strong digital presence for a startup
+        features: Responsive Design, Custom Layout
+        approach: Clean, modern, user-focused
+        role: Design & Development
+        tools: WordPress, HTML/CSS, Photoshop, Illustrator
       - file: av-01.jpg
-        caption: Side View
+        purpose: Brand Presence, Built to simplify content navigation for church members
+        features: Content management
+        approach: Bold typography to strengthen brand identity
+        role: Design & Development
+        tools: Figma, Webflow, HTML/CSS, Javascript
       - file: dynamo-01.jpg
-        caption: Detail Shot
+        purpose: Brand Presence, Redesigned to improve clarity and user engagement
+        features: Performance-focused structure
+        approach: Modern and approachable visual language
+        role: Design & Development
+        tools: WordPress, HTML/CSS, Javascript
         
   - id: modal2
     type: logo
