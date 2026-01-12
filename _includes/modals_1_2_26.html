@@ -1,0 +1,58 @@
+{% for post in site.posts %}
+{% assign project = site.data.projects.projects | where: "id", post.modal-id | first %}
+{% if project %}
+<div class="modal fade" id="portfolioModal{{ post.modal-id }}" tabindex="-1" aria-labelledby="portfolioModalLabel{{ post.modal-id }}">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <!-- Close Button -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="portfolioModalLabel{{ post.modal-id }}">{{ project.title }}</h5>
+        <button type="button" class="btn-close ms-auto m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--<h3 class="text-center mb-4">{{ project.title }}</h3>-->
+        <!-- Carousel -->
+        <div id="carousel{{ post.modal-id }}" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            {% for img in project.images %}
+            <button
+              type="button"
+              data-bs-target="#carousel{{ post.modal-id }}"
+              data-bs-slide-to="{{ forloop.index0 }}"
+              class="{% if forloop.first %}active{% endif %}">
+            </button>
+            {% endfor %}
+          </div>
+          <!-- Slides -->
+          <div class="carousel-inner">
+            {% for img in project.images %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="/aboutme/assets/img/{{ img.file }}" class="d-block w-100" alt="{{ img.caption }}">
+              {% if img.caption %}
+              <div class="carousel-caption d-none d-md-block">
+                <p>{{ img.caption }}</p>
+              </div>
+              {% endif %}
+            </div>
+            {% endfor %}
+          </div>
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carousel{{ post.modal-id }}"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carousel{{ post.modal-id }}"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+        <!-- /Carousel -->
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endfor %}
