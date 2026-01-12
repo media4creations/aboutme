@@ -1,8 +1,18 @@
-<div  id="carousel-{{ project.id }}"  class="carousel slide"  data-bs-ride="carousel">
+<div
+  id="carousel-{{ project.id }}"
+  class="carousel slide"
+  data-bs-ride="carousel"
+>
   <div class="carousel-inner">
     {% for img in project.images %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
       <img src="/aboutme/assets/img/{{ img.file }}" class="d-block w-100">
+      <p><strong>Brand Purpose:</strong> {{ img.purpose }} </p>
+      <p><strong>Industry:</strong> {{ img.industry }} </p>
+      <p><strong>Concept:</strong> {{ img.concept }} </p>
+      <p><strong>Versatility & Application:</strong> {{ img.application }} </p>
+      <p><strong>Tools & Technologies:</strong> {{ img.tools }} </p>
+      <p><strong>Role:</strong> {{ img.role }} </p>
     </div>
     {% endfor %}
   </div>
