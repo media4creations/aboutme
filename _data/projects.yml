@@ -3,10 +3,12 @@ projects:
     type: website
     title: Website Designs
     images:
-       - file: acemia-01.jpg
-         caption: Front View
-       - file: acemia-02.jpg
-         caption: Side View
+      - file: acemia-01.jpg
+        caption: Front View
+      - file: av-01.jpg
+        caption: Side View
+      - file: dynamo-01.jpg
+        caption: Detail Shot
         
   - id: modal2
     type: logo
