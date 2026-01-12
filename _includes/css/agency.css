@@ -1362,3 +1362,7 @@ button.btn-close.ms-auto.m-3 {
 .modal-lg, .modal-xl {
     --bs-modal-width: 873px!important;
 }
+
+.carousel-item p {
+    line-height: 0.8em;
+}
