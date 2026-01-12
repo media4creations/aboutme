@@ -1386,3 +1386,16 @@ button.btn-close.ms-auto.m-3 {
     line-height: 0px !important;
     padding: 0px !important;
 }
+
+.carousel-control-prev-icon {
+    background-color: #00000078;
+    padding: 20px;
+    background-size: 20px;
+    border-radius: 300px;
+}
+.carousel-control-next-icon {
+    background-color: #00000078;
+    padding: 20px;
+    background-size: 20px;
+    border-radius: 300px;
+}
