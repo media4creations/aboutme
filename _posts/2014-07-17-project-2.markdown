@@ -2,7 +2,7 @@
 title: Social Media Design
 subtitle: Social Media Design
 layout: default
-modal-id: 3
+modal-id: modal3
 date: 2026-07-17
 img: escape.png
 thumbnail: escape-thumbnail.png
