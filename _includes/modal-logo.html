@@ -8,7 +8,7 @@
     {% for img in project.images %}
     <button
       type="button"
-      data-bs-target="#carousel{{ project.id }}"
+      data-bs-target="#carousel-{{ project.id }}"
       data-bs-slide-to="{{ forloop.index0 }}"
       class="{% if forloop.first %}active{% endif %}">
     </button>
