@@ -1375,3 +1375,13 @@ button.btn-close.ms-auto.m-3 {
     bottom: -66px!important;
     z-index: 2;
 }
+
+.carousel-indicators button {
+    color: #000 !important;
+    background: #626262 !important;
+    border-radius: 200px;
+    width: 20px !important;
+    height: 0px !important;
+    line-height: 0px !important;
+    padding: 0px !important;
+}
