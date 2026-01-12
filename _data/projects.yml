@@ -1,14 +1,15 @@
 projects:
   - id: 1
-    title: Website Works
-    images:
-      - file: acemia-01.jpg
-        caption: Front View
-      - file: av-01.jpg
-        caption: Side View
-      - file: dynamo-01.jpg
-        caption: Detail Shot
+      type: websites
+      title: Website Designs
+      images:
+        - file: acemia-01.jpg
+          caption: Front View
+        - file: acemia-02.jpg
+          caption: Side View
+        
   - id: 2
+    type: logo
     title: Logo Designs
     images:
       - file: acemia-01.jpg
@@ -17,12 +18,17 @@ projects:
         caption: Side View
       - file: dynamo-01.jpg
         caption: Detail Shot
+
   - id: 3
-    title: Social Media Designs
-    images:
-      - file: acemia-01.jpg
-        caption: Front View
-      - file: av-01.jpg
-        caption: Side View
-      - file: dynamo-01.jpg
-        caption: Detail Shot
+    type: video
+    title: Brand Motion Reel
+    video_url: https://www.youtube.com/embed/xxxxx
+
+  - id: 4
+    type: content
+    title: Case Study
+    sections:
+      - heading: Overview
+        text: Full brand redesign case study
+      - heading: Process
+        text: Research, wireframing, testing
