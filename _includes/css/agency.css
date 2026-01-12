@@ -1364,7 +1364,8 @@ button.btn-close.ms-auto.m-3 {
 }
 
 .carousel-item p {
-    line-height: 0.8em;
+    line-height: 1.4em;
+    margin-bottom: 0.8em;
 }
 
 .carousel-inner {
