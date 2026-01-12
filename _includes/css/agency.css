@@ -1356,13 +1356,17 @@ button.btn-close.ms-auto.m-3 {
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 0 95px 95px;
+    padding: 0 0px 95px;
 }
 
 .modal-lg, .modal-xl {
-    --bs-modal-width: 873px!important;
+    --bs-modal-width: 760px!important;
 }
 
 .carousel-item p {
     line-height: 0.8em;
+}
+
+.carousel-inner {
+    padding: 0 95px;
 }
