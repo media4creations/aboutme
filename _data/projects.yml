@@ -1,14 +1,14 @@
 projects:
-  - id: 1
-      type: website
-      title: Website Designs
-      images:
-        - file: acemia-01.jpg
-          caption: Front View
-        - file: acemia-02.jpg
-          caption: Side View
+  - id: modal1
+    type: website
+    title: Website Designs
+    images:
+       - file: acemia-01.jpg
+         caption: Front View
+       - file: acemia-02.jpg
+         caption: Side View
         
-  - id: 2
+  - id: modal2
     type: logo
     title: Logo Designs
     images:
@@ -19,12 +19,12 @@ projects:
       - file: dynamo-01.jpg
         caption: Detail Shot
 
-  - id: 3
+  - id: modal3
     type: video
     title: Brand Motion Reel
     video_url: https://www.youtube.com/embed/xxxxx
 
-  - id: 4
+  - id: modal4
     type: email
     title: Email Template Designs
     sections:
