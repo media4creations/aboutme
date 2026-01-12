@@ -1370,3 +1370,8 @@ button.btn-close.ms-auto.m-3 {
 .carousel-inner {
     padding: 0 95px;
 }
+
+.carousel-indicators {
+    bottom: -66px!important;
+    z-index: 2;
+}
