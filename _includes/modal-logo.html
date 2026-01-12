@@ -1,8 +1,4 @@
-<div
-  id="carousel-{{ project.id }}"
-  class="carousel slide"
-  data-bs-ride="carousel"
->
+<div  id="carousel-{{ project.id }}"  class="carousel slide"  data-bs-ride="carousel">
   <div class="carousel-inner">
     {% for img in project.images %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
