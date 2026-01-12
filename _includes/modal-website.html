@@ -3,6 +3,18 @@
   class="carousel slide"
   data-bs-ride="carousel"
 >
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    {% for img in project.images %}
+    <button
+      type="button"
+      data-bs-target="#carousel-{{ project.id }}"
+      data-bs-slide-to="{{ forloop.index0 }}"
+      class="{% if forloop.first %}active{% endif %}">
+    </button>
+    {% endfor %}
+  </div>
+  <!-- Carousel -->
   <div class="carousel-inner">
     {% for img in project.images %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
