@@ -1402,3 +1402,7 @@ button.btn-close.ms-auto.m-3 {
 section.bar-graph.bar-graph-horizontal.bar-graph-one {
     margin: 0 auto;
 }
+section.bar-graph.bar-graph-horizontal.bar-graph-one {
+    padding: 0;
+    margin: 0 auto !important;
+}
