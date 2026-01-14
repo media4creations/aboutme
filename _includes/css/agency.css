@@ -1399,3 +1399,6 @@ button.btn-close.ms-auto.m-3 {
     background-size: 20px;
     border-radius: 300px;
 }
+section.bar-graph.bar-graph-horizontal.bar-graph-one {
+    margin: 0 auto;
+}
