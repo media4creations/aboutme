@@ -1306,6 +1306,11 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
     margin-bottom: 50px;
 }
 
+ul.list-inline.social-buttons li {
+    float: left;
+    margin: 0 6px;
+}
+
 /* Carousel CSS */
 .modal.fade {
   opacity: 1 !important;
