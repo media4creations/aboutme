@@ -1410,3 +1410,7 @@ section.bar-graph.bar-graph-horizontal.bar-graph-one {
 i.fa.fa-circle.fa-stack-2x.text-primary {
     color: #d7a04a !important;
 }
+
+.timeline-image {
+    overflow: hidden;
+}
