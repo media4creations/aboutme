@@ -18,7 +18,7 @@
   <div class="carousel-inner">
     {% for img in project.images %}
     <div class="carousel-item {% if forloop.first %}active{% endif %}">
-      <img src="/aboutme/assets/img/{{ img.file }}" class="d-block w-100">
+      <img src="/assets/img/{{ img.file }}" class="d-block w-100">
       <p><strong>Brand Purpose:</strong> {{ img.purpose }} </p>
       <p><strong>Industry:</strong> {{ img.industry }} </p>
       <p><strong>Concept:</strong> {{ img.concept }} </p>
