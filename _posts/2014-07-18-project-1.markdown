@@ -4,8 +4,8 @@ subtitle: Logo Designs
 layout: default
 modal-id: modal2
 date: 2026-01-10
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: logo_thumb.png
+thumbnail: logo_thumb.png
 alt: image-alt
 project-date: April 2026
 client: Start Bootstrap
