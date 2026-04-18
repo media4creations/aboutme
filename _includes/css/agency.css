@@ -560,6 +560,12 @@ section h3.section-subheading {
     margin-bottom: 0;
 }
 
+.timeline-heading h5 {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 0.65em;
+}
+
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
