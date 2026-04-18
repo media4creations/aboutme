@@ -565,6 +565,10 @@ section h3.section-subheading {
     font-size: 1em;
     font-weight: 500;
     line-height: 0.65em;
+    display: inline-block;
+    background: #c5c5c5;
+    padding: 8px 18px;
+    border-radius: 200px;
 }
 
 @media(min-width:768px) {
